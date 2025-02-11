@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex_mml-chtml.js"></script>
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=Tex-MML-AM_CHTML"></script>
+
+    <title>School</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color:White;
+        }
+    </style>
+    <!-- This is to put the navbar in this template  -->
+    {% include 'navbar.html' %}
+
+<!-- on other pages we will include all the parameters of this page -->
+<!-- content is just a variable -->
+  {% block content %}
+
+  {% endblock %}
+</body>
+</html>

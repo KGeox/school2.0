@@ -1,0 +1,28 @@
+{% extends 'main.html' %}
+{% block content %}
+<h1>Hello School</h1>
+<a href="{% url 'latex_input' %}">Latex input</a>
+<a href="{% url 'latex_output' %}">Latex output</a>
+
+
+
+<a href="{% url 'math' %}">Math</a>
+<a href="{% url 'physics' %}">Physics</a>
+<a href="{% url 'chemistry' %}">chemistry</a>
+
+
+
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+
+
+<head>
+<link rel="icon" href="" type="svg">
+<script type="text/javascript" id= "MatJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+ \[a^2 + b^2 = c^2\]
+</body>
+{% endblock %}
